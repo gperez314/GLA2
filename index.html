@@ -1,0 +1,62 @@
+<!-- 
+Name: GLA2
+Course Code: SODV1201
+Class: Software Development Diploma program
+Author: Glenn Perez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLA 2 | Fake Store Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header id="headerContainer">
+        <h1 id="title" class="coloredText2">Fake Store Products</h1>
+    </header>
+    <!-- Staff Page Main Content -->
+    <main id="mainProductsContainer">
+        <div id="dropdownsContainer">
+            <div class="dropdownDiv">
+                <label for="sortOrder">Sort Price:</label>
+                <select class="dropdown" id="sortOrder">
+                    <option value="ascending">Price Low-High</option>
+                    <option value="descending">Price High-Low</option>
+
+                </select>
+            </div>
+            <div class="dropdownDiv">
+                <label for="sortOrder">Filter by Category:</label>
+                <select class="dropdown" id="categoryFilter">
+                    <option value="all">Show All</option>
+                    <option value="men's clothing">Men's Clothing</option>
+                    <option value="women's clothing">Women's Clothing</option>
+                    <option value="jewelery">Jewelry</option>
+                    <option value="electronics">Electronics</option>
+                </select>
+            </div>
+        </div>
+        <div class="productContainer">
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <div id="footerDiv" class="coloredText2">Submitted by:
+            <span class="coloredText2">Glenn Perez</span> | Date: <span id="date" class="coloredText2"></span> |
+            Copyright:
+            <span class="coloredText2">&copy 2024</span>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

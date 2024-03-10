@@ -1,0 +1,132 @@
+/*
+Name: GLA2
+Course Code: SODV1201
+Class: Software Development Diploma program
+Author: Glenn Perez
+*/
+
+/* ============================================================================================ */
+/* Colors and variables */
+/* ============================================================================================ */
+:root {
+    --backgrounColor: white;
+    --color1: rgb(0, 70, 190);
+    --color2: white;
+}
+
+.coloredText1 {
+    color: var(--color1)
+}
+
+.coloredText2 {
+    color: var(--color2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================================================ */
+/* Style for body */
+/* ============================================================================================ */
+header, footer{
+    background-color: var(--color1)
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: var(--backgrounColor);
+}
+
+/* ============================================================================================ */
+/* Special styling for smaller screens */
+/* ============================================================================================ */
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+#headerContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ============================================================================================ */
+/* Styles for Footer */
+/* ============================================================================================ */
+#footerDiv {
+    display: block;
+    height: 30px;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* ============================================================================================ */
+/* Styles for Product Page */
+/* ============================================================================================ */
+#mainProductsContainer {
+    display: block;
+    margin: auto;
+    height: auto;
+    text-align: justify;
+    width: 90vw;
+}
+
+#dropdownsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.dropdownDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.dropdown {
+    width: 200px;
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+/* ============================================================================================ */
+/* Styles for Products List */
+/* ============================================================================================ */
+.productContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-image {
+    width: 200px;
+    height: 250px;
+    margin: 15px 0;
+}
+
+.product {
+    width: 320px;
+    margin: 50px 50px;
+}
+
+.title, .price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.category, .rate {
+    font-size: 0.8em;
+    margin: 5px 0;  
+}
+
+.description {
+    font-size: 1em;
+    margin: 5px 0;  
+}
